@@ -8,13 +8,13 @@ const Counter = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [inputValue, setInputValue] = useState("");
 
-    const Increment = () => {
+    const increment = () => {
         setValue(value + 1);
     };
-    const Decrement = () => {
+    const decrement = () => {
         setValue(value - 1)
     };
-    const Reset = () => {
+    const reset = () => {
         setValue(0);
     }
     const toggleVisibility = () => {
@@ -31,9 +31,9 @@ const Counter = () => {
             <h1 className='container_title'>Name your counter: </h1>
             <input type='text' placeholder='Name me' onChange={changeInputName} value={inputValue} />
             <div className='button_container'>
-                <button onClick={Increment} className='button_element'>Increment</button>
-                <button onClick={Decrement} className='button_element'>Decrement</button>
-                <button onClick={Reset} className='button_element'>Reset</button>
+                <button onClick={increment} className='button_element'>Increment</button>
+                <button onClick={decrement} className='button_element'>Decrement</button>
+                <button onClick={reset} className='button_element'>Reset</button>
                 <button onClick={toggleVisibility} className='button_element'>Try me!!!</button>
             </div>
         </div>
