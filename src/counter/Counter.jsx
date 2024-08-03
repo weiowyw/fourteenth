@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import './Counter.css'
 
+
 const Counter = () => {
+
     const [value, setValue] = useState(0);
     const [isVisible, setIsVisible] = useState(false);
     const [inputValue, setInputValue] = useState("");

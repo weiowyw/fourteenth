@@ -1,11 +1,16 @@
 
 import './App.css';
-import Counter from "./counter/Counter";
+
+// import FormikCounter from "./counter/FormikCounter";
+// import Counter from "./counter/Counter";
+import CounterSofa from "./counter/CounterSofa";
 
 function App() {
     return (
         <div>
-            <Counter />
+            <CounterSofa />
+             {/*<Counter />*/}
+            {/*<FormikCounter />*/}
         </div>
     );
 }
